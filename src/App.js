@@ -1,11 +1,11 @@
 
 import './App.css';
-import CartItem from './CartItem'
+import Cart from './cart'
 import './index.css';
 
 function App() {
   return (
- <CartItem />
+ <Cart />
   );
 }
 

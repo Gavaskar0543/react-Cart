@@ -1,16 +1,7 @@
 import React from 'react';
 
 class CartItem extends React.Component{
-    constructor(){
-        super();
-        this.state = {
-            title:'phone',
-            price:999,
-            qty:1,
-            img:''
-
-        }
-    }
+   
     increaseQty = () =>{
        this.setState({
       qty :  this.state.qty + 1
@@ -36,14 +27,15 @@ class CartItem extends React.Component{
     //   }),() => {})
     }
     render(){
-        const {price,qty} = this.state;
+        console.log('this.props',this.props);
+        const {price,qty,title} = this.props.products;
         return (
            <div className='cart-item'>
                 <div className='left-block'>
                     <img style={styles.image} />
                 </div>
                 <div className='right-block'>
-                    <div style={{ fontSize: 25 }}>{this.state.title}</div>
+                    <div style={{ fontSize: 25 }}>{title}</div>
                     <div style={{ color: '#777' }}>Rs {price}</div>
                     <div style={{ color: '#777' }}>Qty:{qty}</div>
                 </div>
