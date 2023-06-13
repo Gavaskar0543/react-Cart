@@ -41,9 +41,9 @@ class CartItem extends React.Component{
                 </div>
                 <div className='cart-item-actions'>
                     {/* buttons */}
-                    <img alt="plus-icon" className='action-icons'onClick={this.increaseQty} src='https://as2.ftcdn.net/v2/jpg/01/07/62/07/1000_F_107620769_UwNVSoXnKS4VNcOKoZjPohlEPn83oE38.jpg' />
-                    <img alt="minus" className='action-icons' onClick={this.decreaseQty} src='https://as1.ftcdn.net/v2/jpg/03/73/49/86/1000_F_373498649_nBxauQ0ipBSVrVcMpWWVmTpXu3BLvRyY.jpg' />
-                    <img alt="delete" className='action-icons' src='https://as2.ftcdn.net/v2/jpg/00/98/26/11/1000_F_98261175_Sv69O3rZsHApYkjAdrWbgQixYHwyZyOr.jpg' />
+                    <img alt="plus-icon" className='action-icons'onClick={() => this.props.increaseQty(this.props.products)} src='https://as2.ftcdn.net/v2/jpg/01/07/62/07/1000_F_107620769_UwNVSoXnKS4VNcOKoZjPohlEPn83oE38.jpg' />
+                    <img alt="minus" className='action-icons' onClick={() => this.props.decreaseQty(this.props.products)} src='https://as1.ftcdn.net/v2/jpg/03/73/49/86/1000_F_373498649_nBxauQ0ipBSVrVcMpWWVmTpXu3BLvRyY.jpg' />
+                    <img alt="delete" className='action-icons'onClick={() => this.props.deletecart(this.props.products.id)} src='https://as2.ftcdn.net/v2/jpg/00/98/26/11/1000_F_98261175_Sv69O3rZsHApYkjAdrWbgQixYHwyZyOr.jpg' />
 
                 </div>
             </div>
