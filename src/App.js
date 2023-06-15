@@ -14,22 +14,22 @@ class  App extends React.Component {
         {
         title:'phone',
         price:999,
-        qty:1,
-        img:'',
+        qty:0,
+        img:'https://images.unsplash.com/photo-1525598912003-663126343e1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
         id:1
         },
         {
             title:'watch',
-        price:999,
-        qty:6,
-        img:'',
+        price:99,
+        qty:0,
+        img:'https://images.unsplash.com/photo-1544117519-31a4b719223d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=452&q=80',
         id:2
         }
         ,{
             title:'laptop',
-        price:999,
-        qty:8,
-        img:'',
+        price:9999,
+        qty:0,
+        img:'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=820&q=80',
         id:3
         }
     ]
