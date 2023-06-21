@@ -15,14 +15,14 @@ const firebaseConfig = {
   appId: "1:484629330025:web:ea707018948a9fd9f74af8"
 };
 
-const app = initializeApp(firebaseConfig);
-
+ const app = initializeApp(firebaseConfig);
+ 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-
+export default app;
 
 
